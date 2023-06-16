@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import codeQuizImg from '../images/CodeQuiz_screenshot.PNG'
 import dashboardImg from '../images/Dashboard.jpg'
 import fwbuaImg from '../images/FoodWillBeerUsApart_screenshot.jpg'
@@ -196,7 +196,30 @@ const style = {
     }
 }
 
-export default function home(){
+export default function Home(){
+    const [submission, setSubmission] = useState({name:'', email:'', message:''})
+
+    const handleSubmission = (e) => {
+        e.preventDefault()
+        const name = document.getElementById('name').value
+        const email = document.getElementById('email').value
+        const message = document.getElementById('message').value
+
+        const emailRegex = /[a-z|A-Z|1-9]+@[a-z|A-Z|1-9]+\.[a-z|A-Z|1-9]+/
+
+        console.log(name+' '+email+' '+message)
+
+        if(name===''||email===''||message===''||!email.match(emailRegex)){
+            console.log('input not valid')
+        }else{
+            console.log('input is valid')
+            document.getElementById('name').value = ''
+            document.getElementById('email').value = ''
+            document.getElementById('message').value = ''
+        }
+        setSubmission({name:'', email:'', message:''})
+    }
+
     return(
         
         <main>
@@ -328,7 +351,7 @@ export default function home(){
                         </div>
                         <br></br>
                         <div>
-                            <input type='button' value='Send' id='send' style={style.sendButton}></input>
+                            <input type='button' value='Send' id='send' style={style.sendButton} onClick={handleSubmission}></input>
                         </div>
                     </form>
                 </div>
