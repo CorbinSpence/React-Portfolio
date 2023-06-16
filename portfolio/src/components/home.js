@@ -253,9 +253,9 @@ export default function Home(){
                                 </div>
                             </div>
                         </a>
-                        <div class="primary-desc">
+                        {/* <div class="primary-desc">
                             This is a web app that allows users to search from an api to find the perfect beer to drink with a given food. It uses HTML, CSS, Bulma, JavaScript, jQuery, and API querying.
-                        </div>
+                        </div> */}
                     </div>
                     
                     <table style={style.table}>
@@ -270,9 +270,9 @@ export default function Home(){
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="secondary-desc">
+                                    {/* <div class="secondary-desc">
                                         This is an android mobile app designed to simulate a ride share app. It uses java, xml, and Google Firebase.
-                                    </div>
+                                    </div> */}
                                 </td>
                                 <td style={style.td}>
                                     <a href="https://corbinspence.github.io/Code-Quiz/">
@@ -283,9 +283,9 @@ export default function Home(){
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="secondary-desc">
+                                    {/* <div class="secondary-desc">
                                         This is a web app that lets users play a coding quiz and save their final score. It uses HTML, CSS, Javascript, and jQuery.
-                                    </div>
+                                    </div> */}
                                 </td>
                             </tr>
                             <tr>
@@ -298,9 +298,9 @@ export default function Home(){
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="secondary-desc">
+                                    {/* <div class="secondary-desc">
                                         This is an a prototype website that helps teach users about proper dieting. It uses HTML and CSS.
-                                    </div>
+                                    </div> */}
                                 </td>
                                 <td style={style.td}>
                                     <a href="https://github.com/CorbinSpence/Drawing-Board">
@@ -311,9 +311,9 @@ export default function Home(){
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="secondary-desc">
+                                    {/* <div class="secondary-desc">
                                         This is a prototype social media website for aspiring inventors and engineers. It uses HTML, CSS, JavaScript, MySQL, MVC, Node.js, and Express.js.
-                                    </div>
+                                    </div> */}
                                 </td>
                             </tr>
                         </tbody>
