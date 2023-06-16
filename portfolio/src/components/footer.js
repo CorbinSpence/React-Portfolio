@@ -3,14 +3,11 @@ import react from 'react'
 const style = {
     footer:{
         width:'100%',
-        marginTop: '10px',
-        display: 'flex',
-        flexDirection: 'row'
+        marginTop: '10px'
     },
     contacts:{
         paddingTop: '50px',
         paddingBottom: '50px',
-        width: '65%'
     },
     contactLink:{
         marginLeft: '10%',
@@ -29,20 +26,43 @@ const style = {
         textAlign: 'right',
         color: 'navy',
         fontSize: 'x-large'
+    },
+    flexContainer:{
+        display: 'flex',
+        flexWrap: 'no-wrap',
+        columnGap: '100px'
+    },
+    flexJustifyCenter:{
+        justifyContent: 'center'
+    },
+    flexAlignCenter:{
+        alignContent: 'center'
+    },
+    flexCol:{
+        flexDirection: 'column'
+    },
+    flexRow:{
+        flexDirection: 'row'
     }
+
 }
 
 export default function footer(){
     return(
-        <footer id="Contact Info" class="flex-container" style={style.footer}>
-            <aside style={style.aside}>
-                <h1>Contact Info</h1>
-            </aside>
-            <div style={style.contacts}>
-                <a href="404.433.0268" style={style.contactLink}>404.433.0268</a>
-                <a href="corbinspence16@gmail.com" style={style.contactLink}>corbinspence16@gmail.com</a>
-                <a href="https://github.com/CorbinSpence" style={style.contactLink}>Github</a>
-                <a href="https://www.linkedin.com/in/corbin-spence-0aa1751b0/" style={style.contactLink}>LinkedIn</a>
+        <footer id="Contact Links" class="flex-container" style={style.footer}>
+            <div style={{...style.contacts, ...style.flexContainer, ...style.flexJustifyCenter}}>
+                <div>
+                    <a href="404.433.0268" style={style.contactLink}>404.433.0268</a>
+                </div>
+                <div>
+                    <a href="corbinspence16@gmail.com" style={style.contactLink}>corbinspence16@gmail.com</a>
+                </div>
+                <div>
+                    <a href="https://github.com/CorbinSpence" style={style.contactLink}>Github</a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/corbin-spence-0aa1751b0/" style={style.contactLink}>LinkedIn</a>
+                </div>
             </div>
         </footer>
     )
