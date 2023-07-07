@@ -12,7 +12,7 @@ You will need the latest version of node.js, npm, and npx.
 
 ## Deployment
 
-[Portfolio](http//CorbinSpence.github.io/portfolio)
+[Portfolio](https://corbinspence.github.io/React-Portfolio/)
 
 ## Author
 
