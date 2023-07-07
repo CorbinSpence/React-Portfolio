@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/http//CorbinSpence.github.io/React-Portfolio/static/css/main.073c9b0a.css",
+    "main.js": "/http//CorbinSpence.github.io/React-Portfolio/static/js/main.4637bbbb.js",
+    "static/js/787.a2cb61a6.chunk.js": "/http//CorbinSpence.github.io/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Stock_Image.jpg": "/http//CorbinSpence.github.io/React-Portfolio/static/media/Stock_Image.490d2f3ec948f85713ca.jpg",
+    "static/media/Opening_Image.jpg": "/http//CorbinSpence.github.io/React-Portfolio/static/media/Opening_Image.f100e5ec11b4eb6bf10d.jpg",
+    "static/media/Profile_Picture.jpg": "/http//CorbinSpence.github.io/React-Portfolio/static/media/Profile_Picture.680da53fd0d9f1535ec9.jpg",
+    "static/media/FoodWillBeerUsApart_screenshot.jpg": "/http//CorbinSpence.github.io/React-Portfolio/static/media/FoodWillBeerUsApart_screenshot.89348bafb301d6327fc2.jpg",
+    "static/media/Resume_Screenshot.PNG": "/http//CorbinSpence.github.io/React-Portfolio/static/media/Resume_Screenshot.73e7676b45e1c5865b9c.PNG",
+    "static/media/Dashboard.jpg": "/http//CorbinSpence.github.io/React-Portfolio/static/media/Dashboard.e939bb63579fddba17a1.jpg",
+    "static/media/ShapeUp_Screenshot.PNG": "/http//CorbinSpence.github.io/React-Portfolio/static/media/ShapeUp_Screenshot.455707ae8bdf893cb74a.PNG",
+    "static/media/CodeQuiz_screenshot.PNG": "/http//CorbinSpence.github.io/React-Portfolio/static/media/CodeQuiz_screenshot.9236dc615a54dd80fe9f.PNG",
+    "static/media/RideShare_screenshot.png": "/http//CorbinSpence.github.io/React-Portfolio/static/media/RideShare_screenshot.3081baf27a029c7fb8fa.png",
+    "static/media/logo.svg": "/http//CorbinSpence.github.io/React-Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/http//CorbinSpence.github.io/React-Portfolio/index.html",
+    "main.073c9b0a.css.map": "/http//CorbinSpence.github.io/React-Portfolio/static/css/main.073c9b0a.css.map",
+    "main.4637bbbb.js.map": "/http//CorbinSpence.github.io/React-Portfolio/static/js/main.4637bbbb.js.map",
+    "787.a2cb61a6.chunk.js.map": "/http//CorbinSpence.github.io/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.4637bbbb.js"
+  ]
+}
