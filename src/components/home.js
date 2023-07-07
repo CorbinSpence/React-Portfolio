@@ -193,6 +193,9 @@ const style = {
     formBox:{
         minWidth: '733px',
         width: '65%'
+    },
+    errorMessage:{
+        display: 'none'
     }
 }
 
@@ -211,6 +214,7 @@ export default function Home(){
 
         if(name===''||email===''||message===''||!email.match(emailRegex)){
             console.log('input not valid')
+            document.getElementById('error').style.display = 'block'
         }else{
             console.log('input is valid')
             document.getElementById('name').value = ''
@@ -353,6 +357,7 @@ export default function Home(){
                         <div>
                             <input type='button' value='Send' id='send' style={style.sendButton} onClick={handleSubmission}></input>
                         </div>
+                        <div style={style.errorMessage} id='error'>The input is incorrect.</div>
                     </form>
                 </div>
             </div>
