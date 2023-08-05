@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import codeQuizImg from '../images/CodeQuiz_screenshot.PNG'
 import dashboardImg from '../images/Dashboard.jpg'
 import fwbuaImg from '../images/FoodWillBeerUsApart_screenshot.jpg'
@@ -8,6 +8,12 @@ import resumeImg from '../images/Resume_Screenshot.PNG'
 import rideShareImg from '../images/RideShare_screenshot.png'
 import shapeUpImg from '../images/ShapeUp_Screenshot.PNG'
 import placeholderImg from '../images/Stock_Image.jpg'
+import emailjs from '@emailjs/browser';
+
+// necessary IDs for emailjs
+const publicKey = 'GkM4bwcKqa8tEBMpi'
+const serviceID = 'service_qjchtld'
+const templateID = 'template_de9rsgd'
 
 const rootVar = {
     greyBlack:'#2a2a31',
@@ -200,6 +206,9 @@ const style = {
 }
 
 export default function Home(){
+
+    const form = useRef()
+
     const [submission, setSubmission] = useState({name:'', email:'', message:''})
 
     const handleSubmission = (e) => {
@@ -221,15 +230,25 @@ export default function Home(){
             document.getElementById('email').value = ''
             document.getElementById('message').value = ''
         }
+        var params ={
+            name:name,
+            email:email,
+            message:message,
+            note:"Message from portfolio"
+
+        }
+        emailjs.send(serviceID, templateID, params, publicKey)
+        .then((data)=>console.log(data.text))
+        .catch((err)=>console.log(err))
         setSubmission({name:'', email:'', message:''})
     }
 
     return(
         
         <main>
-            <img src={openingImg} alt="Opening image" class="opener" style={style.opener}/>
+            <img src={openingImg} alt="Opening image" className="opener" style={style.opener}/>
 
-            <article id="About Me" class="flex-container" style={{...style.article, ...style.flexContainer}}>
+            <article id="About Me" className="flex-container" style={{...style.article, ...style.flexContainer}}>
                 <aside style={style.aside}>
                 <h1>About Me</h1>
                 </aside>
@@ -243,15 +262,15 @@ export default function Home(){
                 </section>
             </article>
 
-            <div id="Work" class="flex-container" style={style.flexContainer}>
+            <div id="Work" className="flex-container" style={style.flexContainer}>
                 <aside style={style.aside}>
                     <h1>Work</h1>
                 </aside>
-                <div class="grid-container" style={style.gridContainer}>
-                    <div class="primary-project">
+                <div className="grid-container" style={style.gridContainer}>
+                    <div className="primary-project">
                         <a href="https://stbuiemory.github.io/FoodWillBeerUsApart/">
-                            <div class="main-work-block FoodBeerSearch" style={{...style.mainWorkBlock, ...style.FoodBeerSearch}}>
-                                <div class="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
+                            <div className="main-work-block FoodBeerSearch" style={{...style.mainWorkBlock, ...style.FoodBeerSearch}}>
+                                <div className="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
                                     <h2>Food Will Beer Us Apart</h2>
                                     <h4>Javascript/API's</h4>
                                 </div>
@@ -267,8 +286,8 @@ export default function Home(){
                             <tr>
                                 <td style={style.td}>
                                     <a href="https://github.com/CorbinSpence/Mobile_Dev_Final_Project">
-                                        <div class="work-block rideShare" style={{...style.workBlock, ...style.rideShare}}>
-                                            <div class="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
+                                        <div className="work-block rideShare" style={{...style.workBlock, ...style.rideShare}}>
+                                            <div className="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
                                             <h2>Ride Share App</h2>
                                             <h4>Android Studio/Firebase</h4>
                                             </div>
@@ -280,8 +299,8 @@ export default function Home(){
                                 </td>
                                 <td style={style.td}>
                                     <a href="https://corbinspence.github.io/Code-Quiz/">
-                                        <div class="work-block placeholder codeQuiz" style={{...style.workBlock, ...style.codeQuiz}}>
-                                            <div class="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
+                                        <div className="work-block placeholder codeQuiz" style={{...style.workBlock, ...style.codeQuiz}}>
+                                            <div className="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
                                                 <h2>Coding Quiz</h2>
                                                 <h4>Javascript/jQuery</h4>
                                             </div>
@@ -295,8 +314,8 @@ export default function Home(){
                             <tr>
                                 <td style={style.td}>
                                     <a href="https://corbinspence.github.io/ShapeUp_Website/">
-                                        <div class="work-block ShapeUp" style={{...style.workBlock, ...style.ShapeUp}}>
-                                            <div class="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
+                                        <div className="work-block ShapeUp" style={{...style.workBlock, ...style.ShapeUp}}>
+                                            <div className="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
                                                 <h2>Shape Up</h2>
                                                 <h4>HTML/CSS</h4>
                                             </div>
@@ -308,8 +327,8 @@ export default function Home(){
                                 </td>
                                 <td style={style.td}>
                                     <a href="https://github.com/CorbinSpence/Drawing-Board">
-                                        <div class="work-block Dashboard" style={{...style.Dashboard, ...style.workBlock}}>
-                                            <div class="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
+                                        <div className="work-block Dashboard" style={{...style.Dashboard, ...style.workBlock}}>
+                                            <div className="subtitle-block float-left" style={{...style.subtitleBlock, ...style.floatLeft}}>
                                                 <h2>Drawingboard</h2>
                                                 <h4>Express/SQL/MVC</h4>
                                             </div>
@@ -324,7 +343,7 @@ export default function Home(){
                     </table>
                 </div>
             </div>
-            <div id="Resume" class="flex-container resume" style={{...style.flexContainer, ...style.resume}}>
+            <div id="Resume" className="flex-container resume" style={{...style.flexContainer, ...style.resume}}>
                 <aside style={style.aside}>
                     <h1>Resume</h1>
                 </aside>
@@ -337,7 +356,7 @@ export default function Home(){
                     <h1>Contact</h1>
                 </aside>
                 <div style={{...style.flexContainer, ...style.formBox, ...style.flexContainer, ...style.flexAlignCenter, ...style.flexCol}}>
-                    <form style={{...style.contactForm, ...style.flexContainer, ...style.flexAlignCenter, ...style.flexCol}}>
+                    <form style={{...style.contactForm, ...style.flexContainer, ...style.flexAlignCenter, ...style.flexCol}} ref={form}>
                         <h2>Leave a Message</h2>
                         <div>
                             <label style={{...style.label, ...style.textAlignRight}} htmlFor='name'>Name:</label>
