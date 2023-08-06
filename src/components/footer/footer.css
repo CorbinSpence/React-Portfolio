@@ -1,0 +1,43 @@
+footer{
+    width:100%;
+    margin-top: 10px;
+}
+.contacts{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contactLink{
+    margin-left: 10%;
+    padding-bottom: 4px;
+    color: black;
+    border-bottom: 2px solid navy;
+    text-decoration: none;
+    font-size: large;
+}
+.aside{
+    width: 12%;
+    min-width: 150px;
+    margin-right: 7%;
+    padding-right: 3%;
+    border-right: 4px solid navy;
+    text-align: right;
+    color: navy;
+    font-size: x-large;
+}
+.flexContainer{
+    display: flex;
+    flex-wrap: no-wrap;
+    column-gap: 100px;
+}
+.flexJustifyCenter{
+    justify-content: center;
+}
+.flexAlignCenter{
+    align-content: center;
+}
+.flexCol{
+    flex-direction: column;
+}
+.flexRow{
+    flex-direction: row;
+}

@@ -1,0 +1,171 @@
+:root{
+--greyBlack:#2a2a31;
+--fullWidth:100%;
+--workBlockMargins:15px;
+--sectionMargins:10px;
+--workBlockBGColor:#cccccc;
+--navPadding:17px;
+}
+.subtitleBlock{
+    background-color: turquoise;
+    color: var(greyBlack);
+    min-width:150px;
+}
+.opener{
+    width:var(--fullWidth);
+    height: 300px;
+
+}
+.workBlock{
+    border: 5px solid turquoise;
+    background-color: var(--workBlockBGColor);
+    padding-top: 65px;
+    padding-bottom: 65px;
+    height: 70px;
+}
+.mainWorkBlock{
+    border: 5px solid turquoise;
+    background-color: var(--workBlockBGColor);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
+    margin-left: var(--workBlockMargins);
+    margin-right: var(--workBlockMargins);
+}
+.Dashboard{
+    background-image: url(../../images/Dashboard.jpg);
+    background-repeat: no-repeat;
+    background-position: 1% 3%;
+}
+.placeholder{
+    background-image: url(../../images/Stock_Image.jpg);
+    background-repeat: no-repeat;
+}
+.ShapeUp{
+    background-image: url(../../images/ShapeUp_Screenshot.PNG);
+    background-repeat: no-repeat;
+}
+.FoodBeerSearch{
+    background-image: url(../../images/FoodWillBeerUsApart_screenshot.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+}
+.codeQuiz{
+    background-image: url(../../images/CodeQuiz_screenshot.PNG);
+    background-repeat: no-repeat;
+    background-position: 1% 3%;
+}
+.rideShare{
+    background-image: url(../../images/RideShare_screenshot.png);
+    background-repeat: no-repeat;
+    background-position: 40% 0%;
+}
+.flexContainer{
+    display: flex;
+    flex-wrap: no-wrap;
+}
+.flexJustifyCenter{
+    justify-content: center;
+}
+.flexAlignCenter{
+    align-content: center;
+}
+.flexCol{
+    flex-direction: column;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1 auto auto auto;
+    width: 65%;
+}
+table{
+    border-spacing: var(--workBlockMargins);
+}
+td{
+    width: 40%;
+}
+
+/* sets up the titles for the different sections */
+aside{
+    width: 12%;
+    min-width: 150px;
+    margin-right: 7%;
+    padding-right: 3%;
+    border-right: 4px solid navy;
+    text-align: right;
+    color: navy;
+    font-size: x-large;
+}
+
+/* sets up about me section */
+article{
+    width:var(--fullWidth);
+    margin-top: var(--sectionMargins);
+    margin-bottom: var(--sectionMargins);
+}
+.articleSection{
+    margin-left: var(--workBlockMargins);
+    margin-right: var(--workBlockMargins);
+    width: 65%;
+}
+.articleImg{
+    width: 300px;
+    height:300px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+main{
+    width:var(--fullWidth);
+    margin-top: var(--sectionMargins);
+    margin-bottom: var(--sectionMargins);
+}
+
+/* sets up resume section */
+.resume{
+    margin-top: var(--sectionMargins);
+    margin-bottom: var(--sectionMargins);
+}
+.floatLeft{
+    float: left;
+}
+.resumeBox{
+    width:65%;
+    min-width: 733px;
+}
+label{
+    min-width: 75px;
+    display: inline-block;
+    margin-right: 8px;
+}
+input{
+    border: 2px solid black;
+    background-color: #affaf0;
+}
+textarea{
+    min-width: 300px;
+}
+.textareaLabel{
+    vertical-align: top;
+}
+.marginAuto{
+    margin:auto;
+}
+.textAlignRight{
+    text-align: right;
+}
+.sendButton{
+    background-color:#a4a4d5;
+    border-radius: 12px;
+    font-weight: bold;
+    height: 35px;
+    width: 90px;
+    border: 3px solid black;
+}
+.formBox{
+    min-width: 733px;
+    width: 65%;
+}
+.errorMessage{
+    display: none;
+}
