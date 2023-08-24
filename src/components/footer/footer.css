@@ -1,6 +1,15 @@
 footer{
     width:100%;
     margin-top: 10px;
+    animation: fade-in 3s;
+}
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
 }
 .contacts{
     padding-top: 50px;

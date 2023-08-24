@@ -6,6 +6,7 @@
 --workBlockBGColor:#cccccc;
 --navPadding:17px;
 }
+
 .subtitleBlock{
     background-color: turquoise;
     color: var(greyBlack);
@@ -119,8 +120,16 @@ main{
     width:var(--fullWidth);
     margin-top: var(--sectionMargins);
     margin-bottom: var(--sectionMargins);
+    animation: fade-in 2s;
 }
-
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
 /* sets up resume section */
 .resume{
     margin-top: var(--sectionMargins);
