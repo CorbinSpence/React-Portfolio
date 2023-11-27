@@ -2,10 +2,8 @@ import './Work.css'
 export default function Work(){
     return (
         <main>
-            <div id="Work" className="flexContainer">
-                <aside>
-                    <h1>Work</h1>
-                </aside>
+            <h2 className='main-header'>My Work</h2>
+            <div id="Work" className="flexContainer"> 
                 <div className="gridContainer">
                     <div className="primaryProject">
                         <a href="https://stbuiemory.github.io/FoodWillBeerUsApart/">

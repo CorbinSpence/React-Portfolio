@@ -7,10 +7,9 @@ export default function AboutMe(){
             <img src={openingImg} alt="Opening image" className="opener"/>
 
             <article id="About Me" className="flexContainer">
-                <aside>
-                <h1>About Me</h1>
-                </aside>
                 <section className="articleSection">
+                    <h2 className='main-header'>Corbin Spence</h2>
+                    <h3>Full Stack Developer</h3>
                     <img src={profileImg} alt="profile picture" className='articleImg' />
                     <p>
                         I am a detail-oriented, focused worker with a knack for problem solving. My skills include, but are not limited to, working with HTML, CSS, JavaScript, Node.js, and MySQL. I've always had an interest in technology whether it is with animation, 3D 

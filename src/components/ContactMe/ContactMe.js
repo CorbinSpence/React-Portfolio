@@ -1,5 +1,6 @@
 import React, {useState, useRef} from 'react'
 import emailjs from '@emailjs/browser';
+import './ContactMe.css'
 
 const publicKey = 'GkM4bwcKqa8tEBMpi'
 const serviceID = 'service_qjchtld'
@@ -44,24 +45,23 @@ export default function ContactMe(){
     return (
         <main>
             <div id="Contact Info" className='flexContainer contact'>
-                <aside>
-                    <h1>Contact</h1>
-                </aside>
-                <div className='flexContainer formBox flexContainer flexAlignCenter flexCol'>
-                    <form className='contactForm flexContainer flexAlignCenter flexCol' ref={form}>
-                        <h2>Leave a Message</h2>
-                        <div>
-                            <label className='textAlignRight' htmlFor='name'>Name:</label>
+                <div className='flexContainer formBox flexContainer flexCol'>
+                    <form className='contactForm flexContainer flexAlignCenter flexJustifyCenter flexCol' ref={form}>
+                        <h2 className='main-header'>Leave a Message</h2>
+                        <div className='form-data'>
+                            <label htmlFor='name'>Name:</label>
                             <input type='text' placeholder='name' id='name'></input>
                         </div>
                         <br></br>
-                        <div>
-                            <label className='textAlignRight' htmlFor='email'>Email:</label>
+                        <br></br>
+                        <div className='form-data'>
+                            <label htmlFor='email'>Email:</label>
                             <input type='email' placeholder='abc@gmail.com' id='email'></input>
                         </div>
                         <br></br>
-                        <div>
-                            <label className='textAlignRight textareaLabel' htmlFor='message'>Message:</label>
+                        <br></br>
+                        <div className='form-data'>
+                            <label className='textareaLabel' htmlFor='message'>Message:</label>
                             <textarea placeholder='Type message here...' id='message'></textarea>
                         </div>
                         <br></br>

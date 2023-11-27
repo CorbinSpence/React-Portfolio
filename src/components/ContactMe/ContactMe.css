@@ -1,0 +1,33 @@
+.flexContainer{
+    display: flex;
+    justify-content: center;
+}
+#name{
+    margin-right: auto;
+    width: max-content;
+}
+.form-data{
+    text-align: left;
+    margin-left: 35px;
+}
+.form-data input,
+.form-data textarea{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.form-data input:focus,
+.form-data textarea:focus{
+    box-shadow: 0 0 5px 0px;
+    outline-style: solid;
+}
+label{
+    font-weight: bold;
+    font-size: 18px;
+}
+#name,
+#email{
+    margin-left: 15px;
+}
+#message{
+    margin-left: 12px;
+}

@@ -5,6 +5,12 @@
 --sectionMargins:10px;
 --workBlockBGColor:#cccccc;
 --navPadding:17px;
+--primary: #333334;
+--secondary: #cccccc;
+--star-yellow: #FFF222;
+--star-orange: #F9812b;
+--star-white: #fffff5;
+--star-blue: #0134AE;
 }
 
 .subtitleBlock{
@@ -18,20 +24,26 @@
 
 }
 .workBlock{
-    border: 5px solid turquoise;
-    background-color: var(--workBlockBGColor);
     padding-top: 65px;
     padding-bottom: 65px;
     height: 70px;
 }
 .mainWorkBlock{
-    border: 5px solid turquoise;
-    background-color: var(--workBlockBGColor);
     padding-top: 150px;
     padding-bottom: 150px;
     height: auto;
     margin-left: var(--workBlockMargins);
     margin-right: var(--workBlockMargins);
+}
+.workBlock,
+.mainWorkBlock{
+    border: 5px solid turquoise;
+    background-color: var(--workBlockBGColor);
+    transition-duration: .5s;
+}
+.workBlock:hover,
+.mainWorkBlock:hover{
+    box-shadow: 0 0 7px 5px var(--workBlockBGColor);
 }
 .Dashboard{
     background-image: url(../../images/Dashboard.jpg);
@@ -112,8 +124,13 @@ article{
 .articleImg{
     width: 300px;
     height:300px;
-    border: 3px solid black;
-    border-radius: 4px;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation-name: profile-img;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
 
 main{
@@ -121,6 +138,35 @@ main{
     margin-top: var(--sectionMargins);
     margin-bottom: var(--sectionMargins);
     animation: fade-in 2s;
+}
+@keyframes profile-img {
+    0%{
+        box-shadow: 0 0 4px 3px var(--star-yellow);
+    }
+    12.5%{
+        box-shadow: 0 0 10px 3px var(--star-white);
+    }
+    25%{
+        box-shadow: 0 0 4px 3px var(--star-white);
+    }
+    37.5%{
+        box-shadow: 0 0 10px 3px var(--star-blue);
+    }
+    50%{
+        box-shadow: 0 0 4px 3px var(--star-blue);
+    }
+    62.5%{
+        box-shadow: 0 0 10px 3px var(--star-orange);
+    }
+    75%{
+        box-shadow: 0 0 4px 3px var(--star-orange);
+    }
+    87.5%{
+        box-shadow: 0 0 10px 3px var(--star-yellow);
+    }
+    100%{
+        box-shadow: 0 0 4px 3px var(--star-yellow);
+    }
 }
 @keyframes fade-in{
     from{
@@ -172,9 +218,13 @@ textarea{
     border: 3px solid black;
 }
 .formBox{
-    min-width: 733px;
-    width: 65%;
+    min-width: 505px;
+    width: 400px;
 }
 .errorMessage{
     display: none;
+}
+.main-header{
+    font-size: 64px;
+    margin-bottom: 10px;
 }
