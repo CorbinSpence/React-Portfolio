@@ -1,7 +1,8 @@
 footer{
     width:100%;
-    margin-top: 10px;
     animation: fade-in 3s;
+    box-shadow: 0px 0px 30px 1px turquoise;
+    background-color: black;
 }
 @keyframes fade-in{
     from{
@@ -18,10 +19,19 @@ footer{
 .contactLink{
     margin-left: 10%;
     padding-bottom: 4px;
-    color: black;
-    border-bottom: 2px solid navy;
+    color: turquoise;
+    background-image: linear-gradient(100deg, turquoise, turquoise);
+    background-repeat: no-repeat;
+    background-position: 50% 105%;
+    background-size: 0% 2px;
     text-decoration: none;
     font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: .5s;
+}
+.contactLink:hover{
+    color: var(--star-white);
+    background-size: 100% 2px;
 }
 .aside{
     width: 12%;

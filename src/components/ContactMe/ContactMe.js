@@ -44,7 +44,7 @@ export default function ContactMe(){
     }
     return (
         <main>
-            <div id="Contact Info" className='flexContainer contact'>
+            <div id="Contact Info" className='flexContainer contact contact-bg'>
                 <div className='flexContainer formBox flexContainer flexCol'>
                     <form className='contactForm flexContainer flexAlignCenter flexJustifyCenter flexCol' ref={form}>
                         <h2 className='main-header'>Leave a Message</h2>

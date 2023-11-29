@@ -12,7 +12,15 @@
 --star-white: #fffff5;
 --star-blue: #0134AE;
 }
-
+main,
+header,
+footer{
+    color: var(--star-white);
+    font-family: 'Courier New', Courier, monospace;
+}
+main p{
+    line-height: 50px;
+}
 .subtitleBlock{
     background-color: turquoise;
     color: var(greyBlack);
@@ -73,6 +81,12 @@
     background-repeat: no-repeat;
     background-position: 40% 0%;
 }
+.night-city{
+    background-image: url(../../images/pexels-irina-iriser-1366957.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
 .flexContainer{
     display: flex;
     flex-wrap: no-wrap;
@@ -113,8 +127,6 @@ aside{
 /* sets up about me section */
 article{
     width:var(--fullWidth);
-    margin-top: var(--sectionMargins);
-    margin-bottom: var(--sectionMargins);
 }
 .articleSection{
     margin-left: var(--workBlockMargins);
@@ -135,8 +147,6 @@ article{
 
 main{
     width:var(--fullWidth);
-    margin-top: var(--sectionMargins);
-    margin-bottom: var(--sectionMargins);
     animation: fade-in 2s;
 }
 @keyframes profile-img {
@@ -178,8 +188,7 @@ main{
 }
 /* sets up resume section */
 .resume{
-    margin-top: var(--sectionMargins);
-    margin-bottom: var(--sectionMargins);
+    padding-bottom: 100px;
 }
 .floatLeft{
     float: left;
@@ -195,10 +204,13 @@ label{
 }
 input{
     border: 2px solid black;
-    background-color: #affaf0;
+    background-color: var(--greyBlack);
+    color: white;
+    padding: 5px;
 }
 textarea{
     min-width: 300px;
+    padding: 5px;
 }
 .textareaLabel{
     vertical-align: top;
@@ -216,9 +228,14 @@ textarea{
     height: 35px;
     width: 90px;
     border: 3px solid black;
+    transition-duration: .5s;
+}
+.sendButton:hover{
+    background-color: var(--star-blue);
+    cursor: pointer;
 }
 .formBox{
-    min-width: 505px;
+    min-width: 655px;
     width: 400px;
 }
 .errorMessage{
