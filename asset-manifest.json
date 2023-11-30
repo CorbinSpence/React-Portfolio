@@ -1,25 +1,32 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/React-Portfolio/static/js/main.bc67d431.js",
-    "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "main.css": "/React-Portfolio/static/css/main.a244d675.css",
+    "main.js": "/React-Portfolio/static/js/main.1b8072f5.js",
+    "static/js/787.cf482a7c.chunk.js": "/React-Portfolio/static/js/787.cf482a7c.chunk.js",
+    "static/media/pexels-tommes-frites-12618981.jpg": "/React-Portfolio/static/media/pexels-tommes-frites-12618981.b9e3fa006fceee443de8.jpg",
+    "static/media/Zenify.png": "/React-Portfolio/static/media/Zenify.5334852e238af9d7627f.png",
     "static/media/Stock_Image.jpg": "/React-Portfolio/static/media/Stock_Image.490d2f3ec948f85713ca.jpg",
+    "static/media/Movie Booking System Snapshot.png": "/React-Portfolio/static/media/Movie Booking System Snapshot.0ef163a8e77ef53c9bfa.png",
+    "static/media/pexels-abed-albaset-alhasan-5371015.jpg": "/React-Portfolio/static/media/pexels-abed-albaset-alhasan-5371015.48fa0865b3fbd5106f0f.jpg",
+    "static/media/pexels-pixabay-220760.jpg": "/React-Portfolio/static/media/pexels-pixabay-220760.1e65f1aea0fe8c2ccb4d.jpg",
+    "static/media/pexels-irina-iriser-1366957.jpg": "/React-Portfolio/static/media/pexels-irina-iriser-1366957.2ba03a7089926a02b22e.jpg",
     "static/media/Opening_Image.jpg": "/React-Portfolio/static/media/Opening_Image.f100e5ec11b4eb6bf10d.jpg",
+    "static/media/Resume_Screenshot.PNG": "/React-Portfolio/static/media/Resume_Screenshot.38482efd3651a129c4ca.PNG",
     "static/media/Profile_Picture.jpg": "/React-Portfolio/static/media/Profile_Picture.680da53fd0d9f1535ec9.jpg",
     "static/media/FoodWillBeerUsApart_screenshot.jpg": "/React-Portfolio/static/media/FoodWillBeerUsApart_screenshot.89348bafb301d6327fc2.jpg",
-    "static/media/Resume_Screenshot.PNG": "/React-Portfolio/static/media/Resume_Screenshot.73e7676b45e1c5865b9c.PNG",
     "static/media/Dashboard.jpg": "/React-Portfolio/static/media/Dashboard.e939bb63579fddba17a1.jpg",
     "static/media/ShapeUp_Screenshot.PNG": "/React-Portfolio/static/media/ShapeUp_Screenshot.455707ae8bdf893cb74a.PNG",
+    "static/media/Corbin Spence Resume.pdf": "/React-Portfolio/static/media/Corbin Spence Resume.561ab62a435dbb0c07bd.pdf",
     "static/media/CodeQuiz_screenshot.PNG": "/React-Portfolio/static/media/CodeQuiz_screenshot.9236dc615a54dd80fe9f.PNG",
     "static/media/RideShare_screenshot.png": "/React-Portfolio/static/media/RideShare_screenshot.3081baf27a029c7fb8fa.png",
-    "static/media/logo.svg": "/React-Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.svg": "/React-Portfolio/static/media/logo.28940f2eb9e7e0ce64c1805c78244bc5.svg",
     "index.html": "/React-Portfolio/index.html",
-    "main.073c9b0a.css.map": "/React-Portfolio/static/css/main.073c9b0a.css.map",
-    "main.bc67d431.js.map": "/React-Portfolio/static/js/main.bc67d431.js.map",
-    "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.a244d675.css.map": "/React-Portfolio/static/css/main.a244d675.css.map",
+    "main.1b8072f5.js.map": "/React-Portfolio/static/js/main.1b8072f5.js.map",
+    "787.cf482a7c.chunk.js.map": "/React-Portfolio/static/js/787.cf482a7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.bc67d431.js"
+    "static/css/main.a244d675.css",
+    "static/js/main.1b8072f5.js"
   ]
 }

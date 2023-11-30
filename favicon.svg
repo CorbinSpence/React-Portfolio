@@ -1,0 +1,5 @@
+<svg height='160' width='150' style='background: rgb(0,0,0,0.0);'>
+    <polygon points='20,30 55,50 70,10 85,50 120,30 100,65 135,80 100,95 120,130 85,110 70,150 55,110 20,130 40,95 10,80 40,65' 
+    style='fill: #0134AE; stroke: #FFF222;' />
+    <text x='48' y='93' fill='#FFF222' font-size='35'>CS</text>
+</svg>
