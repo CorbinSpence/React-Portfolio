@@ -44,3 +44,6 @@ box-shadow: 0 0 10px 0px white;
     border-radius: 25px;
     padding: 25px;
 }
+.contactForm .main-header{
+    margin-top: 0px;
+}

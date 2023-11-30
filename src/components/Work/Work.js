@@ -8,10 +8,10 @@ export default function Work(){
                     <div className="gridContainer">
                         <div className="primaryProject">
                             <a href="https://stbuiemory.github.io/FoodWillBeerUsApart/">
-                                <div className="mainWorkBlock FoodBeerSearch">
+                                <div className="mainWorkBlock zenify">
                                     <div className="subtitleBlock floatLeft">
-                                        <h2>Food Will Beer Us Apart</h2>
-                                        <h4>Javascript/API's</h4>
+                                        <h2>Zenify</h2>
+                                        <h4>GraphQL/MERN</h4>
                                     </div>
                                 </div>
                             </a>
@@ -38,10 +38,10 @@ export default function Work(){
                                     </td>
                                     <td>
                                         <a href="https://corbinspence.github.io/Code-Quiz/">
-                                            <div className="workBlock placeholder codeQuiz">
+                                            <div className="workBlock placeholder FoodBeerSearch">
                                                 <div className="subtitleBlock floatLeft">
-                                                    <h2>Coding Quiz</h2>
-                                                    <h4>Javascript/jQuery</h4>
+                                                    <h2>Food Will Beer Us Apart</h2>
+                                                    <h4>API/JavaScript/jQuery</h4>
                                                 </div>
                                             </div>
                                         </a>
@@ -53,10 +53,10 @@ export default function Work(){
                                 <tr>
                                     <td>
                                         <a href="https://corbinspence.github.io/ShapeUp_Website/">
-                                            <div className="workBlock ShapeUp">
+                                            <div className="workBlock codeQuiz">
                                                 <div className="subtitleBlock floatLeft">
-                                                    <h2>Shape Up</h2>
-                                                    <h4>HTML/CSS</h4>
+                                                    <h2>Code Quiz</h2>
+                                                    <h4>html/CSS/JavaScript</h4>
                                                 </div>
                                             </div>
                                         </a>
@@ -66,10 +66,10 @@ export default function Work(){
                                     </td>
                                     <td>
                                         <a href="https://github.com/CorbinSpence/Drawing-Board">
-                                            <div className="workBlock Dashboard">
+                                            <div className="workBlock movie-booking-sys">
                                                 <div className="subtitleBlock floatLeft">
-                                                    <h2>Drawingboard</h2>
-                                                    <h4>Express/SQL/MVC</h4>
+                                                    <h2>Movie Booking System</h2>
+                                                    <h4>html/CSS/django</h4>
                                                 </div>
                                             </div>
                                         </a>

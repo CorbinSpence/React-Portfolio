@@ -25,6 +25,9 @@ main p{
     background-color: turquoise;
     color: var(greyBlack);
     min-width:150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .opener{
     width:var(--fullWidth);
@@ -45,7 +48,8 @@ main p{
 }
 .workBlock,
 .mainWorkBlock{
-    border: 5px solid turquoise;
+    border: 5px solid black;
+    border-radius: 3px;
     background-color: var(--workBlockBGColor);
     transition-duration: .5s;
 }
@@ -71,21 +75,50 @@ main p{
     background-repeat: no-repeat;
     background-position: 0% 20%;
 }
+.FoodBeerSearch:hover{
+    background-position: 40% 35%;
+}
 .codeQuiz{
     background-image: url(../../images/CodeQuiz_screenshot.PNG);
     background-repeat: no-repeat;
+    background-size: 610px 410px;
     background-position: 1% 3%;
+}
+.codeQuiz:hover{
+    background-position: 49% 41%;
 }
 .rideShare{
     background-image: url(../../images/RideShare_screenshot.png);
     background-repeat: no-repeat;
-    background-position: 40% 0%;
+    background-size: 600px 600px;
+    background-position: 10% 5%;
+}
+.rideShare:hover{
+    background-position: 40% 30%;
 }
 .night-city{
     background-image: url(../../images/pexels-irina-iriser-1366957.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
+}
+.zenify{
+    background-image: url(../../images/Zenify.png);
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+    background-size: 1200px 600px;
+}
+.zenify:hover{
+    background-position: 30% 40%;
+}
+.movie-booking-sys{
+    background-image: url(../../images/Movie\ Booking\ System\ Snapshot.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 1000px 520px;
+}
+.movie-booking-sys:hover{
+    background-position: 40% 10%;
 }
 .flexContainer{
     display: flex;
