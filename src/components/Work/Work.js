@@ -7,7 +7,7 @@ export default function Work(){
                 <div id="Work" className="flexContainer"> 
                     <div className="gridContainer">
                         <div className="primaryProject">
-                            <a href="https://stbuiemory.github.io/FoodWillBeerUsApart/">
+                            <a href="https://github.com/CorbinSpence/Zenify">
                                 <div className="mainWorkBlock zenify">
                                     <div className="subtitleBlock floatLeft">
                                         <h2>Zenify</h2>
@@ -24,7 +24,7 @@ export default function Work(){
                             <tbody>
                                 <tr>
                                     <td>
-                                        <a href="https://github.com/CorbinSpence/Mobile_Dev_Final_Project">
+                                        <a href="https://github.com/CorbinSpence/Ride-Share-App">
                                             <div className="workBlock rideShare">
                                                 <div className="subtitleBlock floatLeft">
                                                 <h2>Ride Share App</h2>
@@ -37,7 +37,7 @@ export default function Work(){
                                         </div> */}
                                     </td>
                                     <td>
-                                        <a href="https://corbinspence.github.io/Code-Quiz/">
+                                        <a href="https://github.com/CorbinSpence/FoodWillBeerUsApart">
                                             <div className="workBlock placeholder FoodBeerSearch">
                                                 <div className="subtitleBlock floatLeft">
                                                     <h2>Food Will Beer Us Apart</h2>
@@ -52,7 +52,7 @@ export default function Work(){
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="https://corbinspence.github.io/ShapeUp_Website/">
+                                        <a href="https://github.com/CorbinSpence/Code-Quiz">
                                             <div className="workBlock codeQuiz">
                                                 <div className="subtitleBlock floatLeft">
                                                     <h2>Code Quiz</h2>
@@ -65,7 +65,7 @@ export default function Work(){
                                         </div> */}
                                     </td>
                                     <td>
-                                        <a href="https://github.com/CorbinSpence/Drawing-Board">
+                                        <a href="https://github.com/CorbinSpence/movie_booking_system">
                                             <div className="workBlock movie-booking-sys">
                                                 <div className="subtitleBlock floatLeft">
                                                     <h2>Movie Booking System</h2>
